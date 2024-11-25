@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
 
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: "Jockey One", sans-serif;
     min-width: 100vw;
     min-height: 100vh;
     margin: auto;
@@ -22,7 +22,8 @@ body{
 
 // Títulos de Seções
 export const SectionTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 25px;
+  font-weight: bold
   margin: 20px 0;
   text-align: center;
   color: #191847;
@@ -41,9 +42,20 @@ export const ProductGrid = styled.div`
 export const ProductCardWrapper = styled.div`
   display: flex;
   gap: 31px;
-  padding: 19px 0;
-  padding-left: 31px;
+  padding: 19px 20px;
   background-color: rgba(14, 10, 56, 0.05);
+  flex-direction: column;
+
+  .container-subtitle{
+    width: 350px;
+    height: 35px;
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
 
 `
 
