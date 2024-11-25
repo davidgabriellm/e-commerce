@@ -1,7 +1,8 @@
 import { Banner } from './Banner.style';
 import { Button } from './Button.style';
 import { Header, Icon, Nav, Wrapper, WrapperHeader } from './Header.style';
-import { Footer, ProductCard, ProductCardWrapper, ProductGrid, SectionTitle } from './Styled.app';
+import{ProductCard, ProductCardWrapper, SectionTitle } from './Main.style.tsx';
+import { Footer} from './Styled.app';
 import carrinho from './assets/carrinho.png';
 import perfil from './assets/perfil.png';
 import pesquisa from './assets/perquisa.png';
@@ -36,8 +37,6 @@ function App() {
 
       )
     }
-  
-
   return (
     <>
       <Wrapper>
@@ -96,7 +95,7 @@ function App() {
             <SectionTitle>Mais Vendidos</SectionTitle>
             <p>Ir para os mais vendidos</p>
             </div>
-            <div className='container-img'>
+            <div className='container-products'>
             {mock.map((product) => 
               <ProductCard>
                 <img src={product.image_url} alt={product.product_name} />
