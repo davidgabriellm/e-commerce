@@ -1,12 +1,43 @@
-import { Button } from './Button.style';
-import { Header, Nav, Wrapper, WrapperHeader, Icon } from './Header.style';
-import { SectionTitle, ProductGrid, ProductCard, Footer } from './Styled.app';
 import { Banner } from './Banner.style';
+import { Button } from './Button.style';
+import { Header, Icon, Nav, Wrapper, WrapperHeader } from './Header.style';
+import { Footer, ProductCard, ProductCardWrapper, ProductGrid, SectionTitle } from './Styled.app';
+import carrinho from './assets/carrinho.png';
+import perfil from './assets/perfil.png';
+import pesquisa from './assets/perquisa.png';
 import smartwatch from './assets/smartwatch.png';
-import perfil from './assets/perfil.png'
-import pesquisa from './assets/perquisa.png'
-import carrinho from './assets/carrinho.png'
+import { mock } from "./mock.ts";
+
+type ProductPriceProps = {
+  product_price: number | string;
+}
+
 function App() {
+    function ProductPrice({product_price}: ProductPriceProps) {
+      const numericPrice = typeof product_price === 'string' ? parseFloat(product_price) : product_price;
+
+      if (isNaN(numericPrice)) {
+        return <p>Preço inválido</p>
+      }
+      
+      const formatPrice = (price: number) => {
+        const [integerPart, decimalPart] = price.toFixed(2).split('.');
+        return {integerPart, decimalPart}
+      }
+    
+      const {integerPart, decimalPart} = formatPrice(numericPrice)
+
+      return (
+         <p>
+            R$
+            <p className="price-integer">{integerPart}</p>
+            <span className="price-decimal">{decimalPart}</span>
+          </p> 
+
+      )
+    }
+  
+
   return (
     <>
       <Wrapper>
@@ -60,23 +91,16 @@ function App() {
 
         <main>
           <SectionTitle>Mais Vendidos</SectionTitle>
-          <ProductGrid>
-            <ProductCard>
-              <img src="https://via.placeholder.com/150" alt="Produto" />
-              <h3>Produto 1</h3>
-              <p>R$ 129,00</p>
-            </ProductCard>
-            <ProductCard>
-              <img src="https://via.placeholder.com/150" alt="Produto" />
-              <h3>Produto 2</h3>
-              <p>R$ 129,00</p>
-            </ProductCard>
-            <ProductCard>
-              <img src="https://via.placeholder.com/150" alt="Produto" />
-              <h3>Produto 3</h3>
-              <p>R$ 129,00</p>
-            </ProductCard>
-          </ProductGrid>
+            
+          <ProductCardWrapper>
+            {mock.map((product) => 
+              <ProductCard>
+                <img src={product.image_url} alt={product.product_name} />
+                <h4>{product.product_name}</h4>
+                <ProductPrice product_price={product.product_price} />              
+              </ProductCard>           
+            )}
+          </ProductCardWrapper>
 
           <SectionTitle>Promoção Relâmpago</SectionTitle>
           <ProductGrid>

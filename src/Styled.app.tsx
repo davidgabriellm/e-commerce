@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import {createGlobalStyle} from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 
 
@@ -19,11 +18,7 @@ body{
     margin: auto;
     background-color: white
 }
-
 `;
-
-// Banner
-
 
 // Títulos de Seções
 export const SectionTitle = styled.h2`
@@ -43,36 +38,52 @@ export const ProductGrid = styled.div`
   padding: 20px;
 `;
 
+export const ProductCardWrapper = styled.div`
+  display: flex;
+  gap: 31px;
+  padding: 19px 0;
+  padding-left: 31px;
+  background-color: rgba(14, 10, 56, 0.05);
+
+`
+
 // Card de Produto
 export const ProductCard = styled.div`
-  background-color: white;
-  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 181px;
+  max-width: 181px;
+  height: 248px;
   border-radius: 8px;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  gap: 13px; 
 
   img {
+    margin: 0 auto;
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
-  }
+    width: 142px;
+    height: 142px;
 
-  h3 {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #00c853;
-  }
-
-  &:hover {
+    &:hover {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
   }
+  }
+
+  span {
+    color: black;
+    font-size: 10px;
+  }
+
+  p {
+    display: flex;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }  
 `;
 
 // Rodapé
