@@ -11,6 +11,8 @@ export const Banner = styled.section`
   align-items: center;
   flex-grow: 1;
   padding: 0;
+  width: 1577px;
+  height: 363px;
   
 
   h2 {
