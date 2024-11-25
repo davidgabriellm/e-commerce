@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    min-width: 100vw;
-    min-height: 100vh;
-
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; 
 `
 export const WrapperHeader = styled.div`
     max-width: 1500px;
