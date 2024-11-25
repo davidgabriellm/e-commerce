@@ -90,9 +90,13 @@ function App() {
         </Banner>
 
         <main>
-          <SectionTitle>Mais Vendidos</SectionTitle>
             
           <ProductCardWrapper>
+            <div className='container-subtitle'>
+            <SectionTitle>Mais Vendidos</SectionTitle>
+            <p>Ir para os mais vendidos</p>
+            </div>
+            <div className='container-img'>
             {mock.map((product) => 
               <ProductCard>
                 <img src={product.image_url} alt={product.product_name} />
@@ -100,16 +104,9 @@ function App() {
                 <ProductPrice product_price={product.product_price} />              
               </ProductCard>           
             )}
+            </div>
           </ProductCardWrapper>
 
-          <SectionTitle>Promoção Relâmpago</SectionTitle>
-          <ProductGrid>
-            <ProductCard>
-              <img src="https://via.placeholder.com/150" alt="Bola Adidas" />
-              <h3>Bola Adidas Copa do Mundo</h3>
-              <p>R$ 129,00</p>
-            </ProductCard>
-          </ProductGrid>
         </main>
 
         <Footer>
