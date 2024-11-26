@@ -18,14 +18,8 @@ body{
     margin: auto;
     background-color: white
 }
-main{
-  padding: 44px 100px;
 
-}
 `;
-
-
-
 // Rodapé
 export const Footer = styled.footer`
   text-align: center;

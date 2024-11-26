@@ -7,8 +7,9 @@ import carrinho from './assets/carrinho.png';
 import perfil from './assets/perfil.png';
 import pesquisa from './assets/perquisa.png';
 import smartwatch from './assets/smartwatch.png';
-import { mock } from "./mock.ts";
+import { mock, Category } from "./mock.ts";
 import { WrapperCategory, CategoryTitle } from './SectionCategory.tsx';
+
 
 type ProductPriceProps = {
   product_price: number | string;
@@ -109,7 +110,16 @@ function App() {
           
           <WrapperCategory>
             <CategoryTitle>Compre por categoria</CategoryTitle>
-            
+            <div className="containerCategory">
+              {Category.map((category)=> 
+                <div className='containerCategoryProduct'>
+                  <div className='containerImage'>
+                  <img src={category.image} alt={category.Name} />
+                  </div>
+                  <h3>{category.Name}</h3>
+                </div>
+              )}
+            </div>
           </WrapperCategory>
       
         <Footer>
