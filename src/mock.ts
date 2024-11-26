@@ -1,7 +1,6 @@
 interface Product {
   ID: number;
   product_name: string;
-  product_description: string;
   product_price: number;
   image_url: string;
 }
@@ -11,42 +10,36 @@ export const mock: Product[] = [
     "ID": 924392,
     "product_name": "fone bluetooth",
     "product_price": 169.90,
-    "product_description": "Fone bluetooth muito barato Neymar usou na Copa de 2022 antes do jogo contra a Croácia",
     "image_url": "https://w7.pngwing.com/pngs/672/72/png-transparent-apple-watch-series-3-apple-watch-series-2-smartwatch-watches-electronics-gold-apple-watch.png"
   },
   {
     "ID": 924392,
     "product_name": "fone bluetooth",
     "product_price": 169.90,
-    "product_description": "Fone bluetooth muito barato Neymar usou na Copa de 2022 antes do jogo contra a Croácia",
     "image_url": "https://w7.pngwing.com/pngs/672/72/png-transparent-apple-watch-series-3-apple-watch-series-2-smartwatch-watches-electronics-gold-apple-watch.png"
   },
   {
     "ID": 924392,
     "product_name": "fone bluetooth",
     "product_price": 169.90,
-    "product_description": "Fone bluetooth muito barato Neymar usou na Copa de 2022 antes do jogo contra a Croácia",
     "image_url": "https://w7.pngwing.com/pngs/672/72/png-transparent-apple-watch-series-3-apple-watch-series-2-smartwatch-watches-electronics-gold-apple-watch.png"
   },
   {
     "ID": 924392,
     "product_name": "fone bluetooth",
     "product_price": 169.90,
-    "product_description": "Fone bluetooth muito barato Neymar usou na Copa de 2022 antes do jogo contra a Croácia",
     "image_url": "https://w7.pngwing.com/pngs/672/72/png-transparent-apple-watch-series-3-apple-watch-series-2-smartwatch-watches-electronics-gold-apple-watch.png"
   },
   {
     "ID": 924392,
     "product_name": "fone bluetooth",
     "product_price": 169.90,
-    "product_description": "Fone bluetooth muito barato Neymar usou na Copa de 2022 antes do jogo contra a Croácia",
     "image_url": "https://w7.pngwing.com/pngs/672/72/png-transparent-apple-watch-series-3-apple-watch-series-2-smartwatch-watches-electronics-gold-apple-watch.png"
   },
   {
     "ID": 924392,
     "product_name": "fone bluetooth",
     "product_price": 169.90,
-    "product_description": "Fone bluetooth muito barato Neymar usou na Copa de 2022 antes do jogo contra a Croácia",
     "image_url": "https://w7.pngwing.com/pngs/672/72/png-transparent-apple-watch-series-3-apple-watch-series-2-smartwatch-watches-electronics-gold-apple-watch.png"
   }
 
@@ -80,3 +73,43 @@ export const Category = [
   }
 ]
 
+export const Batteries: Product[] = [
+  
+  {
+    "ID": 142392,
+    "product_name": "Bateria duracell dura 24h por dia",
+    "product_price": 129.90,
+    "image_url": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  {
+    "ID": 142392,
+    "product_name": "Bateria duracell dura 24h por dia",
+    "product_price": 129.90,
+    "image_url": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  {
+    "ID": 142392,
+    "product_name": "Bateria duracell dura 24h por dia",
+    "product_price": 129.90,
+    "image_url": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  {
+    "ID": 142392,
+    "product_name": "Bateria duracell dura 24h por dia",
+    "product_price": 129.90,
+    "image_url": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  {
+    "ID": 142392,
+    "product_name": "Bateria duracell dura 24h por dia",
+    "product_price": 129.90,
+    "image_url": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  {
+    "ID": 142392,
+    "product_name": "Bateria duracell dura 24h por dia",
+    "product_price": 129.90,
+    "image_url": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  
+]
