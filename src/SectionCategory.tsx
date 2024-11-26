@@ -7,7 +7,6 @@ export const WrapperCategory = styled.section`
     color:rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
-    margin-bottom: 44px;
     
     .containerCategory{
         width: 100%;

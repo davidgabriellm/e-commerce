@@ -84,5 +84,6 @@ export const ProductCard = styled.div`
   h4{
     font-size: 16px;
     font-weight: 400;
+    color: rgba(97, 97, 97, 1);
   }
 `;
