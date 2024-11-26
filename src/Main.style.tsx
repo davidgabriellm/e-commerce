@@ -9,12 +9,16 @@ export const SectionTitle = styled.h2`
 
 // Grid de Produtos
 
-export const ProductCardWrapper = styled.div`
+
+export const ProductCardWrapper = styled.main`
   display: flex;
-  gap: 31px;
-  padding: 19px 20px;
   background-color: rgba(14, 10, 56, 0.05);
   flex-direction: column;
+  margin: 44px 122px;
+  width: 1332px;
+  height: 374px;
+  justify-content: center;
+  padding: 35px;
 
   .container-subtitle{
     width: 350px;
@@ -32,8 +36,13 @@ export const ProductCardWrapper = styled.div`
     justify-content: space-between;
 }
  
-`
+`;
+export const ProductCardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 
+  
+`
 // Card de Produto
 export const ProductCard = styled.div`
   display: flex;

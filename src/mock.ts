@@ -52,3 +52,31 @@ export const mock: Product[] = [
 
 ]
 
+
+export const Category = [
+  {
+    "Name": "CAPAS DE CELULAR",
+    "image": "https://ik.imagekit.io/gocase/govinci/flamengo-escudo-vintage/caseimpactslimstandard-motorolaonefusion/mockup?"
+  },
+  {
+    "Name": "BATERIAS",
+    "image": "https://cesconstrucao.com.br/media/catalog/product/cache/1/image/400x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_4133.jpg"
+  },
+  {
+    "Name": "FONES BLUETOOTH",
+    "image": "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png"
+  },
+  {
+    "Name": "HEADSET",
+    "image": "https://leonora.vteximg.com.br/arquivos/ids/163350-1000-1000/headset-gamer-line-estereo-driver-preto-e-vermelho-letron-74429--1.png?v=638001565515000000"
+  },
+  {
+    "Name": "CAPAS DE CELULAR",
+    "image": "https://ik.imagekit.io/gocase/govinci/flamengo-escudo-vintage/caseimpactslimstandard-motorolaonefusion/mockup?"
+  },
+  {
+    "Name": "FONES BLUETOOTH",
+    "image": "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png"
+  }
+]
+

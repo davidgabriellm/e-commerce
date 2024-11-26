@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    max-width: 1200px; /* Largura máxima */
+    min-width: 1200px; /* Largura máxima */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 0 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 export const WrapperHeader = styled.div`
-    max-width: 1500px;
+    min-width: 1500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex: 1 0 0;
 
 `
 
@@ -21,6 +24,8 @@ export const Header = styled.header`
   padding: 40px 0;
   display: flex;
   justify-content: center;
+  max-width: 1330;
+  height: 47;
 
   h1 {
     font-size: 2rem;
