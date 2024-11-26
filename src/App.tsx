@@ -7,8 +7,9 @@ import carrinho from './assets/carrinho.png';
 import perfil from './assets/perfil.png';
 import pesquisa from './assets/perquisa.png';
 import smartwatch from './assets/smartwatch.png';
-import { mock, Category } from "./mock.ts";
+import { mock, Category, Batteries } from "./mock.ts";
 import { WrapperCategory, CategoryTitle } from './SectionCategory.tsx';
+import { SectionTitleBattery, BatteryCardWrapper, BatteryCardContainer, BatteryCard } from './BestsellerBatteries.tsx';
 
 
 type ProductPriceProps = {
@@ -121,7 +122,27 @@ function App() {
               )}
             </div>
           </WrapperCategory>
-      
+              
+          <BatteryCardWrapper>
+            <BatteryCardContainer>
+                <div className='container-subtitle'>
+                <SectionTitleBattery>Mais Vendidos em baterias</SectionTitleBattery>
+                <p>Ir para os mais vendidos</p>
+                </div>
+                <div className='container-batteries'>
+                {Batteries.map((battery) => 
+                  <BatteryCard>
+                    <img src={battery.image_url} alt={battery.product_name} />
+                    <h4>{battery.product_name}</h4>
+                    <ProductPrice product_price={battery.product_price} />              
+                  </BatteryCard>           
+                )}
+                </div>
+            </BatteryCardContainer>
+          </BatteryCardWrapper>
+
+
+
         <Footer>
           <p>BrenoCommerce &copy; 2024</p>
         </Footer>
