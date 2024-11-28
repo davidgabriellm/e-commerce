@@ -16,7 +16,7 @@ body{
     min-width: 100vw;
     min-height: 100vh;
     margin: auto;
-    background-color: white
+    background-color: white;
 }
 
 `;
