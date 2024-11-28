@@ -1,0 +1,22 @@
+.money-display {
+    display: flex;
+    align-items: baseline;
+    font-family: Arial, sans-serif;
+  }
+  
+  .money-symbol {
+    font-size: 0.8rem;
+    vertical-align: top;
+    margin-right: 2px;
+  }
+  
+  .money-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .money-cents {
+    font-size: 0.8rem;
+    vertical-align: top;
+    margin-left: 2px;
+  }
