@@ -1,6 +1,7 @@
-import smartwatch from './assets/smartwatch.png';
+import smartwatch from '../assets/smartwatch.png';
 import { Banner } from '../styles/Banner.style.tsx';
 import { Button } from '../styles/Button.style.tsx';
+
 
 
 const BannerHome = () => {

@@ -48,8 +48,8 @@ export const mock: Product[] = [
 
 export const Category = [
   {
-    "Name": "CAPAS DE CELULAR",
-    "image": "https://ik.imagekit.io/gocase/govinci/flamengo-escudo-vintage/caseimpactslimstandard-motorolaonefusion/mockup?"
+    "Name": "MOUSE",
+    "image": "https://www.umpoukodetudo.com.br/media/catalog/product/cache/1/image/1000x/9df78eab33525d08d6e5fb8d27136e95/7/8/784912879_Mouse_Redragon_M987P-K_Reaping_Elite.png_1.png"
   },
   {
     "Name": "BATERIAS",
@@ -64,8 +64,8 @@ export const Category = [
     "image": "https://leonora.vteximg.com.br/arquivos/ids/163350-1000-1000/headset-gamer-line-estereo-driver-preto-e-vermelho-letron-74429--1.png?v=638001565515000000"
   },
   {
-    "Name": "CAPAS DE CELULAR",
-    "image": "https://ik.imagekit.io/gocase/govinci/flamengo-escudo-vintage/caseimpactslimstandard-motorolaonefusion/mockup?"
+    "Name": "MOUSE",
+    "image": "https://www.umpoukodetudo.com.br/media/catalog/product/cache/1/image/1000x/9df78eab33525d08d6e5fb8d27136e95/7/8/784912879_Mouse_Redragon_M987P-K_Reaping_Elite.png_1.png"
   },
   {
     "Name": "FONES BLUETOOTH",

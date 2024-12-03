@@ -1,24 +1,25 @@
 
 import { Header, Icon, Nav, WrapperHeader } from '../styles/Header.style';
-import carrinho from './assets/carrinho.png';
-import perfil from './assets/perfil.png';
-import pesquisa from './assets/perquisa.png';
+import { FiShoppingCart } from "react-icons/fi";
+import { CgProfile } from "react-icons/cg";
+import { IoIosSearch } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const HeaderHome = () => {
   return (
     <Header>
           <WrapperHeader>
-            <h1>BrenoCommerce</h1>
+            <Link to="/"><h1>BrenoCommerce</h1></Link>
             <Nav>
-              <a href="#">Mais Vendidos</a>
-              <a href="#">Fones</a>
-              <a href="#">Baterias</a>
-              <a href="#">Mouse</a>
+              <Link to="/maisVendidos">Mais Vendidos</Link>
+              <Link to="/fones">Fones</Link>
+              <Link to="/baterias">Baterias</Link>
+              <Link to="/mouse">Mouse</Link>
             </Nav>
             <Icon>
-              <img src={perfil} />
-              <img src={pesquisa} />
-              <img src={carrinho} />
+              <Link to="/perfil"><CgProfile className='icons'/></Link>
+              <div className='icon-search'><IoIosSearch className='icons'/></div>
+              <Link to="/carrinho"><FiShoppingCart className='icons'/></Link>
             </Icon>
           </WrapperHeader>
         </Header>
