@@ -9,7 +9,7 @@ flex-direction: row;
     .contentPromotion{
         display: flex;
         flex-direction: column;
-        gap: 27px;
+        gap: 40px;
 
         h3{
             max-width: 706px;

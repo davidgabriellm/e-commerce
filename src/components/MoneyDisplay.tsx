@@ -1,4 +1,4 @@
-import './MoneyDisplayStyle.css'
+import '../styles/MoneyDisplayStyle.css'
 
 interface MoneyProps {
   value: number;

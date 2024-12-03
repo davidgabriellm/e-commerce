@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 
-// Títulos de Seções
+
 export const SectionTitle = styled.h2`
   font-size: 25px;
   font-weight: bold;
 `;
-
-// Grid de Produtos
-
 
 export const ProductCardWrapper = styled.main`
   display: flex;
@@ -40,10 +37,8 @@ export const ProductCardWrapper = styled.main`
 export const ProductCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  
 `
-// Card de Produto
+
 export const ProductCard = styled.div`
   display: flex;
   flex-direction: column;

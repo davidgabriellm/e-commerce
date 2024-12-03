@@ -30,12 +30,12 @@ export const Banner = styled.section`
   }
   .old-price{
     color: red;
-    text-decoration: line-through; /* Linha riscada */
+    text-decoration: line-through; 
     font-size: 14px;
     font-weight: bold;
   }
   .new-price{
-    color: limegreen; /* Verde brilhante */
+    color: limegreen; 
     font-size: 16px;
     font-weight: bold;
   }
