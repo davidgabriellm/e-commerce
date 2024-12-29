@@ -7,7 +7,6 @@ export const SectionTitleBattery = styled.h2`
 
 // Grid de Produtos
 
-
 export const BatteryCardWrapper = styled.main`
   display: flex;
   background-color: rgba(14, 10, 56, 0.05);
@@ -18,9 +17,7 @@ export const BatteryCardWrapper = styled.main`
   justify-content: center;
   padding: 35px;
 
-    
-
-  .container-subtitle{
+  .container-subtitle {
     min-width: 545px;
     height: 35px;
     gap: 60px;
@@ -31,28 +28,25 @@ export const BatteryCardWrapper = styled.main`
     align-items: left;
     margin-bottom: 17px;
 
-        p{
-            min-width: 223px;
-            font-family: "Inter", sans-serif;
-            margin-left: 30px;
-            text-align: center;
-            align-items: center;
-            display: flex;
-        }
+    p {
+      min-width: 223px;
+      font-family: "Inter", sans-serif;
+      margin-left: 30px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+    }
   }
-  .container-batteries{
+  .container-batteries {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-}
- 
+  }
 `;
 export const BatteryCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  
-`
+`;
 // Card de Produto
 export const BatteryCard = styled.div`
   display: flex;
@@ -62,7 +56,7 @@ export const BatteryCard = styled.div`
   height: 248px;
   border-radius: 8px;
   text-align: left;
-  gap: 13px; 
+  gap: 13px;
   font-family: "Inter", sans-serif;
 
   img {
@@ -74,9 +68,9 @@ export const BatteryCard = styled.div`
     height: 142px;
 
     &:hover {
-    transform: scale(1.02);
-    transition: 0.3s ease-in-out;
-  }
+      transform: scale(1.02);
+      transition: 0.3s ease-in-out;
+    }
   }
 
   span {
@@ -90,12 +84,11 @@ export const BatteryCard = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
     font-family: "Inter", sans-serif;
-  }  
+  }
 
-  h4{
+  h4 {
     font-size: 16px;
     font-weight: 400;
     color: rgba(97, 97, 97, 1);
-
   }
 `;

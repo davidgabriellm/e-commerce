@@ -1,9 +1,5 @@
-
-
 const BatteriesRouter = () => {
-  return (
-    <div>BatteriesRouter</div>
-  )
-}
+  return <div>BatteriesRouter</div>;
+};
 
-export default BatteriesRouter
+export default BatteriesRouter;

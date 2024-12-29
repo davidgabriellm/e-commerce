@@ -21,7 +21,17 @@ const CountdownTimer: React.FC = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", textAlign: "right", marginTop: "20px", background: "rgba(0, 255, 144, 1)", maxWidth: "120px",padding: "10px", borderRadius: "6px" }}>
+    <div
+      style={{
+        fontFamily: "Arial, sans-serif",
+        textAlign: "right",
+        marginTop: "20px",
+        background: "rgba(0, 255, 144, 1)",
+        maxWidth: "120px",
+        padding: "10px",
+        borderRadius: "6px",
+      }}
+    >
       <p style={{ fontSize: "24px", color: "teal" }}>{formatTime(timeLeft)}</p>
       {timeLeft === 0 && <p>Tempo esgotado!</p>}
     </div>

@@ -13,29 +13,28 @@ export const Banner = styled.section`
   padding: 0;
   width: 1577px;
   height: 363px;
-  
 
   h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: white;
   }
-  h4{
+  h4 {
     font-size: 15px;
     margin-bottom: 20px;
   }
-  
-  span{
+
+  span {
     font-size: 0.9rem;
   }
-  .old-price{
+  .old-price {
     color: red;
-    text-decoration: line-through; 
+    text-decoration: line-through;
     font-size: 14px;
     font-weight: bold;
   }
-  .new-price{
-    color: limegreen; 
+  .new-price {
+    color: limegreen;
     font-size: 16px;
     font-weight: bold;
   }
@@ -44,22 +43,22 @@ export const Banner = styled.section`
     font-size: 1.2rem;
     color: white;
   }
-  span p{
+  span p {
     font-size: 15px;
   }
-  
-  .wrapper-price{
+
+  .wrapper-price {
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: space-around;
   }
 
-  img{
+  img {
     width: 200px;
     margin-bottom: 10px;
   }
-  .wrapper-banner{
+  .wrapper-banner {
     background-color: white;
     padding: 45px 20px 35px 20px;
   }

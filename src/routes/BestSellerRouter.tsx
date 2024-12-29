@@ -1,9 +1,5 @@
-
-
 const BestSellerRouter = () => {
-  return (
-    <div>BestSellerRouter</div>
-  )
-}
+  return <div>BestSellerRouter</div>;
+};
 
-export default BestSellerRouter
+export default BestSellerRouter;
