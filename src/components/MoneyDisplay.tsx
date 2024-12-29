@@ -1,12 +1,11 @@
-import '../styles/MoneyDisplayStyle.css'
+import "../styles/MoneyDisplayStyle.css";
 
 interface MoneyProps {
   value: number;
 }
 
 const MoneyDisplay: React.FC<MoneyProps> = ({ value }) => {
-
-  const [reais, centavos] = value.toFixed(2).split('.');
+  const [reais, centavos] = value.toFixed(2).split(".");
 
   return (
     <div className="money-display">

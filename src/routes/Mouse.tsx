@@ -1,9 +1,5 @@
-
-
 const Mouse = () => {
-  return (
-    <div>Mouse</div>
-  )
-}
+  return <div>Mouse</div>;
+};
 
-export default Mouse
+export default Mouse;

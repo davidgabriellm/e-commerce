@@ -1,14 +1,13 @@
 import { Category } from "../mock";
-import { WrapperCategory, CategoryTitle } from '../styles/SectionCategory.tsx';
-
+import { WrapperCategory, CategoryTitle } from "../styles/SectionCategory.tsx";
 
 const SectionCategory = () => {
   return (
     <WrapperCategory>
       <CategoryTitle>Compre por categoria</CategoryTitle>
       <div className="containerCategory">
-        {Category.map(category => (
-          <div className="containerCategoryProduct">
+        {Category.map((category) => (
+          <div className="containerCategoryProduct" key={category.id}>
             <div className="containerImage">
               <img src={category.image} alt={category.Name} />
             </div>

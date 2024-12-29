@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const SectionTitle = styled.h2`
   font-size: 25px;
   font-weight: bold;
@@ -17,7 +15,7 @@ export const ProductCardWrapper = styled.main`
   justify-content: center;
   padding: 35px;
 
-  .container-subtitle{
+  .container-subtitle {
     width: 350px;
     height: 35px;
     gap: 60px;
@@ -27,17 +25,16 @@ export const ProductCardWrapper = styled.main`
     justify-content: center;
     align-items: center;
   }
-  .container-products{
+  .container-products {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-}
- 
+  }
 `;
 export const ProductCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const ProductCard = styled.div`
   display: flex;
@@ -47,7 +44,7 @@ export const ProductCard = styled.div`
   height: 248px;
   border-radius: 8px;
   text-align: left;
-  gap: 13px; 
+  gap: 13px;
   font-family: "Inter", sans-serif;
 
   img {
@@ -59,9 +56,9 @@ export const ProductCard = styled.div`
     height: 142px;
 
     &:hover {
-    transform: scale(1.02);
-    transition: 0.3s ease-in-out;
-  }
+      transform: scale(1.02);
+      transition: 0.3s ease-in-out;
+    }
   }
 
   span {
@@ -74,11 +71,15 @@ export const ProductCard = styled.div`
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
-  }  
+  }
 
-  h4{
+  h4 {
     font-size: 16px;
     font-weight: 400;
     color: rgba(97, 97, 97, 1);
   }
+`;
+export const ProductPriceContainer = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
