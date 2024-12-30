@@ -1,11 +1,11 @@
-import { Category } from "../mock";
 import { WrapperCategory, CategoryTitle } from "../styles/SectionCategory.tsx";
+import CarouselCategory from "./carousel/CarouselCategory.tsx";
 
 const SectionCategory = () => {
   return (
     <WrapperCategory>
       <CategoryTitle>Compre por categoria</CategoryTitle>
-      <div className="containerCategory">
+      {/* <div className="containerCategory">
         {Category.map((category) => (
           <div className="containerCategoryProduct" key={category.id}>
             <div className="containerImage">
@@ -14,7 +14,8 @@ const SectionCategory = () => {
             <h3>{category.Name}</h3>
           </div>
         ))}
-      </div>
+      </div> */}
+      <CarouselCategory />
     </WrapperCategory>
   );
 };
