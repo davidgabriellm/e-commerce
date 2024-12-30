@@ -17,6 +17,7 @@ export const WrapperCategory = styled.section`
     padding: 0 40px;
 
     &::-webkit-scrollbar {
+      display: none;
     }
   }
   .containerCategory {
