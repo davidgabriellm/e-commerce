@@ -1,16 +1,67 @@
 import styled from "styled-components";
 
 export const WrapperCategory = styled.section`
-  min-width: 1577px;
+  max-width: 1577px;
   min-height: 363px;
   background-color: #262260;
   color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
 
-  .containerCategory {
-    width: 100%;
+  .carousel {
+    /* width: 100%; */
     display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0 40px;
+
+    &::-webkit-scrollbar {
+    }
+  }
+  .containerCategory {
+    display: flex;
+    position: relative;
+
+    button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+
+      &:hover {
+        /* background-color: rgba(255, 255, 255, 0.5); */
+      }
+
+      .icon-left {
+        position: absolute;
+        font-size: 3rem;
+        position: absolute;
+        top: 35%;
+        left: 0px;
+        padding: 10px;
+        border-radius: 4px;
+        transition: background-color 0.4s linear;
+        color: #05dd17;
+
+        &:hover {
+          background-color: rgba(165, 164, 164, 0.3);
+        }
+      }
+      .icon-right {
+        position: absolute;
+        font-size: 3rem;
+        top: 35%;
+        right: 0px;
+        padding: 10px;
+        border-radius: 4px;
+        transition: background-color 0.4s linear;
+        color: #05dd17;
+
+        &:hover {
+          background-color: rgba(119, 116, 116, 0.3);
+        }
+      }
+    }
   }
 
   .containerCategoryProduct {
