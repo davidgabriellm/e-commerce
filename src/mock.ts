@@ -92,6 +92,36 @@ export const Category = [
     Name: "FONES BLUETOOTH",
     image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
   },
+  {
+    id: 7,
+    Name: "FONES BLUETOOTH",
+    image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
+  },
+  {
+    id: 8,
+    Name: "FONES BLUETOOTH",
+    image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
+  },
+  {
+    id: 9,
+    Name: "FONES BLUETOOTH",
+    image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
+  },
+  {
+    id: 10,
+    Name: "FONES BLUETOOTH",
+    image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
+  },
+  {
+    id: 11,
+    Name: "FONES BLUETOOTH",
+    image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
+  },
+  {
+    id: 12,
+    Name: "FONES BLUETOOTH",
+    image: "https://brmotorolanew.vtexassets.com/arquivos/motoBuds065.png",
+  },
 ];
 
 export const Batteries: Product[] = [
