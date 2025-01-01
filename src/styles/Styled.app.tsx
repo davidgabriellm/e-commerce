@@ -15,6 +15,7 @@ body{
     min-height: 100vh;
     margin: auto;
     background-color: white;
+    padding-bottom: 20px;
 
     a{
         text-decoration: none;
