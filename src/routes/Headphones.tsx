@@ -1,19 +1,16 @@
+import { ContainerGrid} from "../components/cardsGrid/CardGrid.style";
+import CardGridProducts from "../components/cardsGrid/CardGridProducts";
 import { useProductsData } from "../hooks/useProductsData";
 
 const Headphones = () => {
   const { data } = useProductsData("fones");
-  console.log("data: ", data);
-  console.log("results: ", data?.results);
-
+  
   return (
-    <div>
-      {data?.results.map((dt) => (
-        <div className="card" key={dt.id}>
-          <img src={dt.thumbnail} alt="" />
-          <h3>{dt.price}</h3>
-        </div>
+    <ContainerGrid>
+      {data?.results.map(({id, title, thumbnail, price}) => (
+        <CardGridProducts id={id} title={title} thumbnail={thumbnail} price={price}/>
       ))}
-    </div>
+    </ContainerGrid>
   );
 };
 
