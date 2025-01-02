@@ -1,7 +1,6 @@
 import { MouseEvent, useRef } from "react";
+import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
 import { Category } from "../../mock";
-import { FaAnglesLeft } from "react-icons/fa6";
-import { FaAnglesRight } from "react-icons/fa6";
 
 const CarouselCategory = () => {
   const carousel = useRef<HTMLDivElement | null>(null);
@@ -24,7 +23,7 @@ const CarouselCategory = () => {
     <div className="containerCategory">
       <div className="carousel" ref={carousel}>
         {Category.map((category) => (
-          <div className="containerCategoryProduct">
+          <div className="containerCategoryProduct" key={category.id}>
             <div className="containerImage">
               <img src={category.image} alt={category.Name} />
             </div>
