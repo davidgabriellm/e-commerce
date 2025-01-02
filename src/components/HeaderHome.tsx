@@ -1,8 +1,8 @@
-import { Header, Icon, Nav, WrapperHeader } from "../styles/Header.style";
-import { FiShoppingCart } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
+import { FiShoppingCart } from "react-icons/fi";
 import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { Header, Icon, Nav, WrapperHeader } from "../styles/Header.style";
 
 const HeaderHome = () => {
   return (
