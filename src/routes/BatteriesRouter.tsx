@@ -1,5 +1,24 @@
+import { ContainerGrid } from '../components/cardsGrid/CardGrid.style';
+import CardGridProducts from '../components/cardsGrid/CardGridProducts';
+import { useProductsData } from '../hooks/useProductsData';
+
 const BatteriesRouter = () => {
-  return <div>BatteriesRouter</div>;
+  const { data } = useProductsData('baterias');
+
+  return (
+    <div>
+      <ContainerGrid>
+        {data?.results.map(({ id, title, thumbnail, price }) => (
+          <CardGridProducts
+            id={id}
+            title={title}
+            thumbnail={thumbnail}
+            price={price}
+          />
+        ))}
+      </ContainerGrid>
+    </div>
+  );
 };
 
 export default BatteriesRouter;
