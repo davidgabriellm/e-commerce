@@ -24,7 +24,7 @@ const CarouselCategory = () => {
     <div className="containerCategory">
       <div className="carousel" ref={carousel}>
         {Category.map((category) => (
-          <div className="containerCategoryProduct">
+          <div className="containerCategoryProduct" key={category.id}>
             <div className="containerImage">
               <img src={category.image} alt={category.Name} />
             </div>

@@ -8,10 +8,12 @@ const Home = () => {
   return (
     <>
       <BannerHome />
+      <div className="containerSection">
       <BestSeller />
       <SectionCategory />
       <BestSellerBattery />
       <SoccerBallPromotion />
+      </div>
     </>
   );
 };

@@ -7,13 +7,16 @@ export const SectionTitle = styled.h2`
 
 export const ProductCardWrapper = styled.main`
   display: flex;
-  background-color: rgba(14, 10, 56, 0.05);
+  /* background-color: rgba(14, 10, 56, 0.05); */
+  background-color: white;
   flex-direction: column;
   margin: 44px 122px;
-  width: 1332px;
+  width: 100%;
   height: 374px;
   justify-content: center;
   padding: 35px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 
   .container-subtitle {
     width: 350px;
