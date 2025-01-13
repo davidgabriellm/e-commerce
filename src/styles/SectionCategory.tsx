@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const WrapperCategory = styled.section`
-  max-width: 1577px;
+  width: 100%;
+  max-width: 100%;
   min-height: 363px;
-  background-color: #262260;
+  background-color: #232323;
   color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 
   .carousel {
     /* width: 100%; */
@@ -93,6 +97,7 @@ export const WrapperCategory = styled.section`
       width: 65%;
       height: 65%;
       border-radius: 50%;
+      background-color: white;
     }
   }
 `;

@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const ContainerPromotion = styled.section`
   width: 1311.87px;
-  height: 510px;
+  height: auto;
   display: flex;
   flex-direction: row;
+  padding: 5px;
 
   .contentPromotion {
     display: flex;

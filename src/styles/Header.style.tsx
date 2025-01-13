@@ -3,35 +3,57 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   min-width: 1200px; /* Largura máxima */
   margin: 0 auto; /* Centraliza horizontalmente */
+  min-height: 100vh;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-color: #00ff99; */
+  /* background-color: #F8F8F8; */
+  background: linear-gradient(to bottom, #222222ea 5% , #F8F8F8 95% );
+  position: relative;
+
+  .containerSection{
+    width: 1332px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
 
   a {
     text-decoration: none;
   }
 `;
 export const WrapperHeader = styled.div`
-  min-width: 1500px;
+  min-width: 100vw;
+  /* height: 100%; */
+  height: 7vh;
+  background-color: #222222ea;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  
 `;
 
 export const Header = styled.header`
-  background-color: white;
-  color: black;
+  min-width: 1500px;
+  height: 47px;
   text-align: center;
   padding: 40px 0;
   display: flex;
-  justify-content: center;
-  max-width: 1330;
-  height: 47;
+  justify-content: space-around;
+  align-items: center;
+  /* z-index: 1; */
 
   h1 {
     font-size: 2rem;
+    color: white;
   }
 `;
 
@@ -42,8 +64,8 @@ export const Nav = styled.nav`
   gap: 20px;
 
   a {
-    color: black;
-    font-weight: bold;
+    color: white;
+    font-weight: 200;
     text-decoration: none;
 
     &:hover {
@@ -60,6 +82,7 @@ export const Icon = styled.div`
   justify-content: center;
   gap: 20px;
 
+
   .icon-search {
     display: flex;
     align-items: center;
@@ -67,7 +90,7 @@ export const Icon = styled.div`
 
   .icons {
     font-size: 30px;
-    color: black;
+    color: white;
   }
 
   img {

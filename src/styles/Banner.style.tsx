@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const Banner = styled.section`
-  background-color: #262260;
+  background-color: black;
   color: black;
   text-align: center;
   display: flex;
-  min-height: 370px;
   justify-content: space-evenly;
-  height: 100%;
   align-items: center;
   flex-grow: 1;
   padding: 0;
-  width: 1577px;
-  height: 363px;
+  width: 100vw;
+  height: 390px;
+  margin-top: 65px;
 
   h2 {
     font-size: 2rem;
@@ -61,5 +60,6 @@ export const Banner = styled.section`
   .wrapper-banner {
     background-color: white;
     padding: 45px 20px 35px 20px;
+    height: 100%;
   }
 `;

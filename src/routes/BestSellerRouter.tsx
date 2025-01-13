@@ -1,4 +1,4 @@
-import { ContainerGrid } from '../components/cardsGrid/CardGrid.style';
+import { ContainerGrid, WrapperGrid } from '../components/cardsGrid/CardGrid.style';
 import CardGridProducts from '../components/cardsGrid/CardGridProducts';
 import { useProductsData } from '../hooks/useProductsData';
 
@@ -8,7 +8,7 @@ const BestSellerRouter = () => {
   const {data} = useProductsData('maisVendidos')
   
   return (
-    <div>
+      <WrapperGrid>
       <ContainerGrid>
         {data?.results.map(({ id, title, thumbnail, price }) => (
           <CardGridProducts
@@ -16,10 +16,12 @@ const BestSellerRouter = () => {
             title={title}
             thumbnail={thumbnail}
             price={price}
+            key={id}
           />
         ))}
       </ContainerGrid>
-    </div>
+      </WrapperGrid>
+    
   );
 
 };

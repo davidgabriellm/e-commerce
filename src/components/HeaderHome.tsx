@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const HeaderHome = () => {
   return (
-    <Header>
-      <WrapperHeader>
+    <WrapperHeader>
+      <Header>
         <Link to="/">
           <h1>BrenoCommerce</h1>
         </Link>
@@ -28,8 +28,8 @@ const HeaderHome = () => {
             <FiShoppingCart className="icons" />
           </Link>
         </Icon>
-      </WrapperHeader>
-    </Header>
+      </Header>
+    </WrapperHeader>
   );
 };
 
