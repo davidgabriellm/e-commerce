@@ -2,6 +2,7 @@ import React from 'react';
 import { Product } from '../../interfaces/product-data';
 import useCartStore from '../../store/cart.store';
 import { ContainerGridCard } from './CardGrid.style';
+import { BsCartPlus } from "react-icons/bs";
 
 const CardGridProducts = ({ id, title, thumbnail, price }: Product) => {
   const { addToCart, cart } = useCartStore();
@@ -51,6 +52,7 @@ const CardGridProducts = ({ id, title, thumbnail, price }: Product) => {
           <span>COMPRAR AGORA</span>
         </button>
       </div>
+      <BsCartPlus className='iconAddCart'/>
     </ContainerGridCard>
   );
 };

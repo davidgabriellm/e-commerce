@@ -30,6 +30,25 @@ export const ContainerGridCard = styled.div`
   border-radius: 5px;
   /* box-shadow: 1px 1px 1px; */
   border: 1px solid rgba(100, 100, 100, 0.2);
+  position: relative;
+
+  &:hover .iconAddCart{
+    color: black;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 1;
+    font-size: 1.7rem;
+  }
+
+  .iconAddCart{
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
 
   .imageGrid {
     width: 100%;
@@ -38,12 +57,14 @@ export const ContainerGridCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     img {
       width: 220px;
       height: 220px;
       object-fit: cover;
     }
+
   }
 
   .infoCard {
