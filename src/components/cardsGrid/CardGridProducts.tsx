@@ -48,11 +48,13 @@ const CardGridProducts = ({ id, title, thumbnail, price }: Product) => {
             })}
           </span>
         </button>
-        <button className="btn-addCart" onClick={handleAddCart}>
+        <button className="btn-addCart">
           <span>COMPRAR AGORA</span>
         </button>
       </div>
+      <button onClick={handleAddCart}>
       <BsCartPlus className='iconAddCart'/>
+      </button>
     </ContainerGridCard>
   );
 };
