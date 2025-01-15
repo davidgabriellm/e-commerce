@@ -1,10 +1,14 @@
-import { Header, Icon, Nav, WrapperHeader } from "../styles/Header.style";
+import { Header, Icon, Nav, WrapperHeader} from "../styles/Header.style";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
+import useCartStore from "../store/cart.store";
 
 const HeaderHome = () => {
+  const {cart} = useCartStore()
+
+
   return (
     <WrapperHeader>
       <Header>
@@ -26,6 +30,9 @@ const HeaderHome = () => {
           </div>
           <Link to="/carrinho">
             <FiShoppingCart className="icons" />
+            {cart.length > 0 && (
+              <span className="cartQuantity">{cart.length}</span>
+            )}
           </Link>
         </Icon>
       </Header>

@@ -105,6 +105,25 @@ export const Icon = styled.div`
     width: 133px;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    .cartQuantity{
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      font-size: 12px;
+      background-color: red;
+      color: white;
+      padding: 2px 5px;
+      border-radius: 50%;
+      z-index: 100;
+      font-family: 'Inter', sans-serif;
+    }
 
     img {
       height: 100%;
@@ -114,4 +133,3 @@ export const Icon = styled.div`
   }
 `;
 
-export const link = styled.a``;
