@@ -2,10 +2,13 @@ import React from 'react';
 import { Product } from '../../interfaces/product-data';
 import useCartStore from '../../store/cart.store';
 import { ContainerGridCard } from './CardGrid.style';
-import { BsCartPlus } from "react-icons/bs";
+import { BsCartPlus } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 const CardGridProducts = ({ id, title, thumbnail, price }: Product) => {
-  const { addToCart, cart } = useCartStore();
+  const { addToCart, cart} = useCartStore();
+
+  const navigate = useNavigate();
 
   const handleAddCart = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -35,6 +38,9 @@ const CardGridProducts = ({ id, title, thumbnail, price }: Product) => {
   // };
   return (
     <ContainerGridCard key={id}>
+      <button onClick={handleAddCart} className='btnAddCart'>
+        <BsCartPlus className="iconAddCart" />
+      </button>
       <div className="imageGrid">
         <img src={thumbnail?.replace(/\w\.jpg/gi, 'W.jpg')} alt="" />
       </div>
@@ -48,13 +54,10 @@ const CardGridProducts = ({ id, title, thumbnail, price }: Product) => {
             })}
           </span>
         </button>
-        <button className="btn-addCart">
+        <button className="btn-addCart" onClick={() => navigate(`/produtos/${id}`)}>
           <span>COMPRAR AGORA</span>
         </button>
       </div>
-      <button onClick={handleAddCart}>
-      <BsCartPlus className='iconAddCart'/>
-      </button>
     </ContainerGridCard>
   );
 };
