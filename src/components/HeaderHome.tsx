@@ -5,8 +5,17 @@ import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
 import useCartStore from "../store/cart.store";
 
+import ShoppingCart from "./ShoppingCart";
+import useCartShoppingStore from "../store/cartShoppingOpen.store";
+
 const HeaderHome = () => {
   const {cart} = useCartStore()
+
+  const {toggleCart, cartOpen} = useCartShoppingStore()
+
+  // const handleToggleCart = () => {
+  //   toggleCart();
+  // };
 
 
   return (
@@ -28,13 +37,16 @@ const HeaderHome = () => {
           <div className="icon-search">
             <IoIosSearch className="icons" />
           </div>
-          <Link to="/carrinho">
-            <FiShoppingCart className="icons" />
+          <div className="containerShoppingCart">
+            <FiShoppingCart className="icons ShoppingCart" onClick={toggleCart}/>
             {cart.length > 0 && (
               <span className="cartQuantity">{cart.length}</span>
             )}
-          </Link>
+          </div>
         </Icon>
+        { cartOpen.isOpen && (
+          <ShoppingCart/>
+        )}
       </Header>
     </WrapperHeader>
   );

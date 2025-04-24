@@ -3,7 +3,9 @@ interface Product {
   product_name: string;
   product_price: number;
   image_url: string;
-}
+}  
+
+
 
 export const mock: Product[] = [
   {

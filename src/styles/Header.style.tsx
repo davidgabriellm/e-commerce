@@ -42,12 +42,12 @@ export const WrapperHeader = styled.div`
 `;
 
 export const Header = styled.header`
-  min-width: 1500px;
+  min-width: 1337px;
   height: 47px;
   text-align: center;
   padding: 40px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /* z-index: 1; */
 
@@ -83,6 +83,14 @@ export const Icon = styled.div`
   gap: 20px;
 
 
+
+  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+
   .icon-search {
     display: flex;
     align-items: center;
@@ -91,6 +99,33 @@ export const Icon = styled.div`
   .icons {
     font-size: 30px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cartQuantity{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+  .containerShoppingCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
   }
 
   img {
@@ -102,28 +137,12 @@ export const Icon = styled.div`
   a {
     display: flex;
     height: 28px;
-    width: 133px;
+    width: 30px;
     align-items: center;
     justify-content: center;
     position: relative;
 
-    .cartQuantity{
-      width: 18px;
-      height: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      font-size: 12px;
-      background-color: red;
-      color: white;
-      padding: 2px 5px;
-      border-radius: 50%;
-      z-index: 100;
-      font-family: 'Inter', sans-serif;
-    }
+    
 
     img {
       height: 100%;

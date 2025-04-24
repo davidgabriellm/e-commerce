@@ -9,8 +9,8 @@ import BestSellerRouter from "./routes/BestSellerRouter.tsx";
 import Headphones from "./routes/Headphones.tsx";
 import BatteriesRouter from "./routes/BatteriesRouter.tsx";
 import Mouse from "./routes/Mouse.tsx";
-import ShoppingCart from "./routes/ShoppingCart.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import DetailsCard from "./components/detailsItems/DetailsCard.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/produtos/:id",
+        element: <DetailsCard/>
       },
       {
         path: "/maisVendidos",
@@ -40,10 +44,6 @@ const router = createBrowserRouter([
       {
         path: "/perfil",
         element: <BestSellerRouter />,
-      },
-      {
-        path: "/carrinho",
-        element: <ShoppingCart />,
       },
     ],
   },

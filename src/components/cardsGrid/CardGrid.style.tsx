@@ -31,25 +31,44 @@ export const ContainerGridCard = styled.div`
   /* box-shadow: 1px 1px 1px; */
   border: 1px solid rgba(100, 100, 100, 0.2);
   position: relative;
+  
 
   &:hover .iconAddCart{
-    color: black;
+    color: #b41a1a;
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     opacity: 1;
     font-size: 1.7rem;
+    transition: all 0.2s ease-out
   }
 
-  .iconAddCart{
+  &:hover .btnAddCart{
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    z-index: 1;
+  }
+
+
+  .btnAddCart{
     opacity: 0;
     position: absolute;
     top: 5px;
     right: 5px;
   }
-
+  
+  .iconAddCart{
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
   .imageGrid {
     width: 100%;
     height: 300px;
@@ -111,6 +130,7 @@ export const ContainerGridCard = styled.div`
     button {
       border: none;
       background-color: transparent;
+      cursor: pointer;
 
       .priceCard {
         font-size: 1.1rem;
